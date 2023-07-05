@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button ondblclick="handleLoginClick()">Login</button>
+
+    <input id="txtSearch" onchange="handleSearch()" placeholder="Search..." >
+
+
+    <script>
+        //Phân biệt onmouseout và onmouseover
+        function handleLoginClick(){
+            console.log("Mới click đó bạn");
+        }
+
+        // Phân biệt oninput và onchange
+        function handleSearch(){
+            console.log(document.getElementById("txtSearch").value);
+        }
+    </script>
+</body>
+</html>

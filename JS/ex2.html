@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="textA" type="text" />
+    <input id="textB" type="text" />
+    <button type="button" onclick="onhandleBtnClick()">Cộng</button>
+    <h5 id="result"></h5>
+    <ul id="result1">
+        
+    </ul>
+
+
+    <script>
+        // document.write : ghi 1 nội dung lên website
+        // document.write("<h1>HEllo C0623G1</h1>")
+
+        function onhandleBtnClick(){
+            // console.log("Nut cộng mới click đó bạn ơi");
+            var a = +document.getElementById("textA").value;
+            var b = +document.getElementById("textB").value;
+
+            // console.log(a + b);
+            // alert(a+b);         // hiển thị hộp thoại thông báo
+            // document.getElementById("result").innerText = a + b;
+            // document.getElementById("result1").innerHTML = "<li>Kết quả: " + (a+b) + " </li>";
+            document.write(a+b);
+        }
+    </script>
+</body>
+</html>

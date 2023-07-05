@@ -1,0 +1,16 @@
+/** intenal style **/
+/** Chọn nhiều thẻ cùng lúc  **/
+h1, p{
+    color: blue;
+    text-decoration: underline;
+}
+.h-red{
+    color: yellow;
+    text-decoration: line-through;
+}
+.h-background{
+    background-color: aqua;
+}
+#id-doan{
+    text-align: right;
+}
