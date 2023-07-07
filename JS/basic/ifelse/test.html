@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="modal-body" id="formBody">
+        <div class="undefined">
+            <label>Title</label>
+            <input class="input-custom form-control" type="text" name="title" onblur="onFocus(0)"
+                pattern="^[A-Za-z]{6,20}" value="" required="" focused="true"><br>
+            <span class="error">Title must have minimun is 6 charaters and maximun is 20 charaters</span>
+        </div>
+        <div class="undefined">
+            <label>Price</label>
+            <input class="input-custom form-control" type="text" name="price" onblur="onFocus(1)" value="" required=""
+                focused="true"><br>
+            <span class="error">Email invalid</span>
+        </div>
+        <div class="undefined">
+            <label>Category</label>
+            <select class="input-custom form-control" type="select" name="category" onblur="onFocus(2)"
+                value="undefined" focused="true">
+                <option value="">---Choose---</option>
+                <option value="1">Phone</option>
+                <option value="2">Laptop</option>
+                <option value="3">aaa</option>
+            </select>
+            <br>
+            <span class="error">Category invalid</span>
+        </div>
+    </div>
+</body>
+
+</html>

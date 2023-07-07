@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let flag = false;
+        let str = "";
+        let strPoint;       //underfine
+        do{
+            // aa, -1, 12, [1-10], enter   //5
+            strPoint = prompt(str + "Nhập điểm: ");  // "5"
+            if(strPoint == ""){
+                // hắn đang nhập enter
+                flag = true;
+                str = "SAI RỒI đừng nhập enter ";
+            }else{
+                let pointAvg = +strPoint;   //5
+                if(isNaN(pointAvg)){    //false 
+                    flag = true;   
+                    str = "SAI RỒI phải nhập só bạn ơi "; 
+                }else{
+                    if(pointAvg <0 || pointAvg > 10){   //true
+                        flag = true;
+                        str = "SAI RỒI phải nhập từ [0-10] bạn ơi "; 
+                    }else{
+                        flag = false;       // Đúng
+                    }
+                }
+            }
+
+            
+        }while(flag)
+        
+        alert(`Đã nhập xong số: ${strPoint}`)
+        
+        
+    </script>
+</body>
+</html>
